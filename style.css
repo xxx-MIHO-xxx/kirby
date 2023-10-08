@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+.kirby {
+  width: 500px;
+  height: 500px;
+  background: pink;
+  border: 1px solid rgb(255, 159, 175);
+  border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.kirby-face {
+  width: 400px;
+  height: 300px;
+  display: flex;
+}
+
+.kirby-eye-right {
+  width: 50px;
+  height: 150px;
+  background: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  top: 40px;
+  left: 300px;
+
+}
+
+.kirby-eyeshadow-right {
+  width: 25px;
+  height: 50px;
+  background: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: relative;
+  top: 48px;
+  left: 210px;
+  z-index: 2;
+}
+
+.kirby-eye-left {
+  width: 50px;
+  height: 150px;
+  background: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  top: 40px;
+  left: 100px;
+
+}
+
+.kirby-eyeshadow-left {
+  width: 25px;
+  height: 50px;
+  background: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: relative;
+  top: 48px;
+  left: 34px;
+  z-index: 2;
+}
+
+.kirby-cheek-right {
+  width: 100px;
+  height: 40px;
+  background: rgb(246, 92, 161);
+  border-radius: 50%;
+  position: relative;
+  top: 200px;
+  left: 210px;
+}
+
+.kirby-cheek-left {
+  width: 100px;
+  height: 40px;
+  background: rgb(246, 92, 161);
+  border-radius: 50%;
+  position: relative;
+  top: 200px;
+  left: -210px;
+}
+
+.kirby-mouse {
+  width: 32px;
+  height: 8px;
+  background: red;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  top: 240px;
+  left: -123px;
+  animation: hungry 4s infinite linear;
+  /* animation: hungry 2s infinite linear; */
+}
+
+@keyframes hungry {
+
+  50% {
+    width: 32px;
+    height: 100px;
+    /* height: 300px; */
+  }
+
+}
+
